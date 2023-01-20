@@ -6,29 +6,26 @@
 
 
 Console.Write("Введите число: ");
-int number= Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"Чётные числа в интервале от 0 до {number}");
 
-int index = 1;
 bool NoEvenNum = true;
+int index = 2;
 
-    while (index <= number)
-        {
-        if (index % 2 != 1)
-            {
-            Console.Write($"{index}, ");
-            NoEvenNum = false;
-            }
-        index = index + 1;
-        }
+while (index <= number)
+{
+    Console.Write($"{index}, ");
+    index = index + 2;
+    NoEvenNum = false;
+}
 
-        if (NoEvenNum)
-            {
-            Console.WriteLine("В этом интервале нет чётных положительных ычисел!");
-            }
+if (NoEvenNum)
+{
+    Console.WriteLine("В этом интервале нет чётных положительных ычисел!");
+}
 
 
-   
-    
+
+
 
