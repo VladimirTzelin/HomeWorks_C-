@@ -18,10 +18,10 @@ int c = Int32.Parse(str_c);
 int max = a;
 if (max < b)
 {
-  max = b;
-  if (max < c)
-  {
-    max = c; 
-  }   
+    max = b;
+}
+if (max < c)
+{
+    max = c;
 }
 Console.WriteLine($"a = {a}; b = {b} ;  c = {c} ; max =  {max}");
