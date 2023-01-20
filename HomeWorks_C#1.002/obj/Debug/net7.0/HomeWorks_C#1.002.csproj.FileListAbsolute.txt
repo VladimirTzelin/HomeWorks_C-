@@ -1,0 +1,15 @@
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\bin\Debug\net7.0\HomeWorks_C#1.002.exe
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\bin\Debug\net7.0\HomeWorks_C#1.002.deps.json
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\bin\Debug\net7.0\HomeWorks_C#1.002.runtimeconfig.json
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\bin\Debug\net7.0\HomeWorks_C#1.002.dll
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\bin\Debug\net7.0\HomeWorks_C#1.002.pdb
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\HomeWorks_C#1.002.csproj.AssemblyReference.cache
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\HomeWorks_C#1.002.GeneratedMSBuildEditorConfig.editorconfig
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\HomeWorks_C#1.002.AssemblyInfoInputs.cache
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\HomeWorks_C#1.002.AssemblyInfo.cs
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\HomeWorks_C#1.002.csproj.CoreCompileInputs.cache
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\HomeWorks_C#1.002.dll
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\refint\HomeWorks_C#1.002.dll
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\HomeWorks_C#1.002.pdb
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\HomeWorks_C#1.002.genruntimeconfig.cache
+D:\REPO2\HomeWorks_C#\HomeWorks_C#1.002\obj\Debug\net7.0\ref\HomeWorks_C#1.002.dll
