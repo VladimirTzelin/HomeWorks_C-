@@ -32,7 +32,7 @@ bool СheckingDigits(int num)
     }
 }
 
-// SeconDigit() Ищем значение второго разряда трёх значного числа
+// SeconDigit() Ищем значение второго разряда трёхзначного числа
 
 int SeconDigit(int num)
 {
