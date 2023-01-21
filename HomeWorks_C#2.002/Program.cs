@@ -1,6 +1,5 @@
 ﻿/* Задача 2:    Напишите программу, которая выводит третью цифру заданного числа, 
-                начиная со старших разрядов или сообщает, что третьей цифры нет.
-    
+                начиная со старших разрядов, или сообщает, что третьей цифры нет.   
     Примеры:    645 -> 5
                 78 -> третьей цифры нет
                 32679 -> 6
@@ -28,20 +27,16 @@ int SearchDigit(int num)
     int digit3 = num % 10;
     num = num / 10;
 
-     // Console.Write($" digit1 {digit1} digit2 {digit2} digit3 {digit3} ");
-
+     
     while (num > 0)
     {
         digit1 = digit2;
         digit2 = digit3;
         digit3 = num % 10;
-        num = num / 10;
-        
-        // Console.Write($" digit1 {digit1} digit2 {digit2} digit3 {digit3} ");
+        num = num / 10;      
     }
     return (digit1);
 }
-
 
 // СheckingDigits()   Проверка разрядности введённого числа
 
