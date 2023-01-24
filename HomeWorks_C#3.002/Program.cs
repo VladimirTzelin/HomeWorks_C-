@@ -20,7 +20,7 @@ y2 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите координату Z второй точки > ");
 z2 = Convert.ToDouble(Console.ReadLine());
 
-// L = [(x1-x2)^2 + (y1-y2)^2 = (z1 - z2)^2]^0.5
+// L = [(x1-x2)^2 + (y1-y2)^2 + (z1 - z2)^2]^0.5
 
 distance = Math.Sqrt
 (
