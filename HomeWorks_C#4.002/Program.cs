@@ -38,9 +38,10 @@ int SumOfDigits(int num)
     return sum;
 }
 
-bool CheckNum(int deg)               // Проверка на не отрицательноcть значения степени 
+// Проверка на не отрицательноcть значения числа
+bool CheckNum(int num)
 {
-    if (deg < 0)
+    if (num < 0)
     {
         Console.Write("Укажите целое положительное число ! ");
         return false;
