@@ -1,4 +1,4 @@
-﻿/* SЗадача 3:   Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+﻿/* SЗадача 3:   Напишите программу, которая создаёт массив заданной длины и выводит его на экран.
 Примеры:        1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
                 6, 1, 33 -> [6, 1, 33]
 */
@@ -18,7 +18,7 @@ if (CheckNum(number))
 else Console.Write($"Ошибка ввода числа {number}");
 
 
-// Преобразование видов (string) в  (int)
+// Преобразование типа переменной из string в  int
 int InputNumber(string message)
 {
     System.Console.Write(message + "> ");
@@ -50,8 +50,3 @@ int[] ArrayOfValues(int num)
     return array;
 }
 
-//Console.Write("Введите число, для задания массива: ");
-//int num = Convert.ToInt32(Console.ReadLine());
-//int[] resalt = ArrayInit(num);
-//Console.WriteLine($"[{string.Join(", ", ArrayOfValues(num))}]"); //Выводите массив
-    //Console.ReadLine();
