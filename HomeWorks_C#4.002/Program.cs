@@ -11,7 +11,8 @@ int number = InputNumber("Введите число А: ");
 
 if (CheckNum(number))
 {
-    Console.Write($"Сумма цифр числа {number}  = {SumOfDigits(number)};");
+    Console.WriteLine($"Сумма цифр числа {number}  = {SumOfDigits(number)};");
+    Console.ReadLine();
 }
 else Console.Write($"Ошибка ввода числа {number}");
 
