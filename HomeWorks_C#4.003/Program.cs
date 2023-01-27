@@ -5,15 +5,16 @@
 
 Console.WriteLine("Создаём массив длиной А и выводим его на консоль");
 
-int number = InputNumber("Введите число А: ");
+int number = InputNumber("Укажите длину массива: ");
 
 if (CheckNum(number))
 {   //Вывод массива
+    Console.WriteLine();
     Console.WriteLine($"[{string.Join(", ", ArrayOfValues(number))}]"); 
     // String.Join Метод Сцепляет элементы указанного массива или элементы коллекции, 
     // помещая между ними заданный разделитель. 
     // https://learn.microsoft.com/ru-ru/dotnet/api/system.string.join?view=net-7.0
-    Console.ReadLine();
+    Console.WriteLine();
 }
 else Console.Write($"Ошибка ввода числа {number}");
 
@@ -28,7 +29,7 @@ int InputNumber(string message)
 }
 
 
-// Проверка на не отрицательноcть значения числа
+// Проверка на не отрицательноcть введённого значения (num)
 bool CheckNum(int num)
 {
     if (num < 0)
