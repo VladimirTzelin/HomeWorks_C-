@@ -31,7 +31,7 @@ void PrintArray(int[] array)
 }
 
 // считаем количество четных значений в массиве
-int EvenNumbers(int[] array)
+int CountEvenNumbers(int[] array)
 {
     int evenCounter = 0;
     for (int i = 0; i < array.Length; i++)
@@ -57,5 +57,5 @@ int lgth = InputNumber("Введите длину массива ");
 int[] InitalArray = CreateArrayOfNumbers(lgth);
 PrintArray(InitalArray);
 Console.Write(" -> ");
-Console.WriteLine(EvenNumbers(InitalArray));
+Console.WriteLine(CountEvenNumbers(InitalArray));
 
