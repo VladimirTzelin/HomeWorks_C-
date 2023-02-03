@@ -9,8 +9,6 @@ int[] EnteringArrayValues()
     Console.Write("\nУкажите длину массива->\t");
     string str_n = Console.ReadLine();
     int num = Int32.Parse(str_n);
-
-   // int n = int.Parse(string.ReadLine());
     int[] arr = new int[num];
 
     for (int i = 0; i < num; i++)
