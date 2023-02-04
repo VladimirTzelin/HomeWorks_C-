@@ -37,7 +37,7 @@ void PrintArray(int[,] array)
 
 int NumberInput(string msg)
 {
-    Console.WriteLine(msg + " > ");
+    Console.Write(msg + " > ");
     return Convert.ToInt32(Console.ReadLine());
 }
 
