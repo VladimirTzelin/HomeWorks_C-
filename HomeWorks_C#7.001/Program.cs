@@ -1,11 +1,12 @@
-﻿/* Задача 1: Задайте двумерный массив размером m×n, 
+﻿/* Семинар 7 ДЗ 
+Задача 1: Задайте двумерный массив размером m×n, 
 заполненный случайными вещественными числами.
 Пример: m = 3, n = 4.
                         0,5  7      -2    -0,2
                         1    -3,3   8     -9,9
                         8    7,8    -7,1  9                           */
 
-// Назначаем параметры массива
+// Назначаем с консоли размер (n,m) массива 
 int InputData(string msg)
 {
     Console.Write($"{msg} > ");
@@ -16,12 +17,12 @@ int InputData(string msg)
 double[,] CreateArrayRealValues(int n, int m)
 {
     double[,] array = new double[n, m];
-    Random rand = new Random();
+    Random rand = new Random(); 
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
-        {
-            array[i, j] = rand.Next(-100, 101) * 0.001;
+        {   //Случ. вещественное число, вместо rnd -> rand
+            array[i, j] = rand.Next(-100, 101) * 0.003; 
             //array[i, j] = Math.Round(rand.Next(-100, 101) * 0.01, 2);
         }
     }
@@ -36,17 +37,17 @@ void PrintArray(double[,] array, string msg)
     {
         Console.WriteLine();
         for (int j = 0; j < array.GetLength(1); j++)   // array.GetLength(1) длина столбца
-        {
-            Console.Write(array[i, j].ToString("F3") + "\t"); // Получилось отформатировать
+        {   // Только так получилось отформатировать <array[i, j].ToString("F3")>
+            Console.Write(array[i, j].ToString("F3") + "\t"); 
         }
     }
     Console.WriteLine();
 }
 
 
-int lgthN = InputData("Введите строк  массива   N: ");
-int lgthM = InputData("Введите столбцов массива M: ");
-double[,] InitalArray = CreateArrayRealValues(lgthN, lgthM);
+int sizeN = InputData("Введите строк  массива   N: ");
+int sizeM = InputData("Введите столбцов массива M: ");
+double[,] InitalArray = CreateArrayRealValues(sizeN, sizeM);
 PrintArray(InitalArray, "Создан массив вещественных значений: ");
 
 
