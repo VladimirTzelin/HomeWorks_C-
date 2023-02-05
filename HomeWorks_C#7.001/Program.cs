@@ -9,7 +9,7 @@
 // Назначаем с консоли размер (n,m) массива 
 int InputData(string msg)
 {
-    Console.Write($"{msg} > ");
+    Console.Write($"{msg} ");
     return Convert.ToInt32(Console.ReadLine());
 }
 
@@ -45,8 +45,8 @@ void PrintArray(double[,] array, string msg)
 }
 
 
-int sizeN = InputData("Введите строк  массива   N: ");
-int sizeM = InputData("Введите столбцов массива M: ");
+int sizeN = InputData("Введите количество строк  массива   N: ");
+int sizeM = InputData("Введите количество столбцов массива M: ");
 double[,] InitalArray = CreateArrayRealValues(sizeN, sizeM);
 PrintArray(InitalArray, "Создан массив вещественных значений: ");
 
