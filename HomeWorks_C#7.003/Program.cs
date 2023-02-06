@@ -31,36 +31,42 @@ int[,] CreateArray(int row, int col)
 void PrintArray(int[,] array, string msg)
 {
     Console.ForegroundColor = ConsoleColor.DarkBlue;
-    Console.WriteLine(msg);
+    Console.Write(msg);
     for (int i = 0; i < array.GetLength(0); i++)     // array.GetLength(0) длина строки 
     {
         Console.Write("\n" + "\t");
         for (int j = 0; j < array.GetLength(1); j++) // array.GetLength(1) длина столбца
         {
-            Console.Write("\t" + array[i, j]);
+            Console.Write($"\t {array[i, j]:F2}");
         }
     }
 }
 
+void PrintArray1(double[] array, string msg)
+{
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
+    Console.Write(msg);
+    for (int i = 0; i < array.Length; i++)     // array.GetLength(0) длина строки 
+    {
+        Console.Write($"\t {array[i]:F2}");
+    }
+}
+
 // Ищем среднее арифметическое столбцов массива 
-void Сalculator(int n, int m, int[,] array)
+double[] Сalculator(int n, int m, int[,] array)
 {
     int sum;
-    double average;
-    Console.ForegroundColor = ConsoleColor.DarkGreen;
-    Console.Write("\n" + "Среднее:");
+    double[] average = new double[m];
     for (int j = 0; j < m; j++)
     {
-        average = 0;
         sum = 0;
         for (int i = 0; i < n; i++)
         {
             sum = sum + array[i, j];
         }
-        average = (Double)sum / array.GetLength(0);
-        Console.Write($"\t{average:F2}");
+        average[j] = (Double)sum / array.GetLength(0);
     }
-    Console.WriteLine("\n" + "-----------");
+    return average;
 }
 
 
@@ -70,5 +76,7 @@ int columns = InputData($"Введите количество столбцов �
 int[,] Array = CreateArray(rows, columns);
 PrintArray(Array, "\nСоздан массив чисел: ");
 Сalculator(rows, columns, Array);
-Console.WriteLine();
+double[] Aaverage = Сalculator(rows, columns, Array);
+PrintArray1(Aaverage, "\nСреднее: ");
+Console.WriteLine("\n");
 Console.ForegroundColor = ConsoleColor.White;
