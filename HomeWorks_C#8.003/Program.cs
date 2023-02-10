@@ -32,7 +32,7 @@ void CheckingSize(int colA, int rowB)
 {
     if (colA != rowB)
     {
-        Console.WriteLine($"Перемножение матриц не возможно!");
+        Console.WriteLine($"Матрицы не согласованы, перемножение не возможно!");
         Console.WriteLine($"Количество row B[{rowB},] не равно column A[,{colA}]");
         Environment.Exit(0);
     }
