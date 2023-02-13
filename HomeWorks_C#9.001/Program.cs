@@ -27,15 +27,11 @@ void EvenNumbers(int m, int n)
     {
         return;
     }
-    if (m % 2 == 0)
+    if (m % 2 != 0)
     {
-        m = m + 2;
+        m = m + 1;
     }
-    else
-    {
-        ++m; 
-    }
-
+    
     Console.Write($"{m}; ");
     EvenNumbers(m + 1, n);
 }
