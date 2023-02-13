@@ -23,17 +23,17 @@ bool Check(int num)
 
 void EvenNumbers(int m, int n)
 {
-    if (m > n - 1)
+    if (m > n)
     {
         return;
     }
     if (m % 2 != 0)
     {
-        m = m + 1;
+        m++;
     }
-    
+
     Console.Write($"{m}; ");
-    EvenNumbers(m + 1, n);
+    EvenNumbers(m + 2, n);
 }
 
 int M = InputData($"Введите значение\t\t M = ");
