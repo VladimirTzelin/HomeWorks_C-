@@ -1,5 +1,4 @@
-﻿
-System.Console.WriteLine("Pascal Triangle Program");
+﻿System.Console.WriteLine("Pascal Triangle Program");
 System.Console.Write("Введите количество строк: ");
 string input = System.Console.ReadLine();
 int n = Convert.ToInt32(input);
@@ -20,5 +19,4 @@ for (int y = 0; y < n; y++)
     System.Console.WriteLine();
 }
 System.Console.WriteLine();
-
 
